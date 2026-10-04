@@ -113,6 +113,17 @@ The property data is a **snapshot** of a Pakistan real-estate dataset (originall
 - More cities and richer listing details
 - Saved searches and exportable investigation reports
 
+---
+
+## Team
+
+- [Muhammad Ameer Hamza]
+- [Shabab Ali]
+- [Tajwar Ghani Rathore]
+- [Abdullah Mirza]
+- [Taiba Asif]
+
+
 ## Acknowledgements
 
 - Aspire Pakistan, PAK Angels, iCode Guru, HEC-NCEAC & PEC for the Generative & Agentic AI Training and Hackathon

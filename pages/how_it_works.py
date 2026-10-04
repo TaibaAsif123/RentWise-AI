@@ -1,35 +1,7 @@
-
 import streamlit as st
+from theme import apply_theme
 
-st.markdown("""
-<style>
-.hero {
-    background: linear-gradient(135deg, #111827, #1f2937);
-    padding: 3rem;
-    border-radius: 24px;
-    color: white;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-}
-
-.card {
-    background: white;
-    padding: 1.8rem;
-    border-radius: 18px;
-    border: 1px solid #e5e7eb;
-    margin-bottom: 1rem;
-}
-
-.step {
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-</style>
-""", unsafe_allow_html=True)
+apply_theme()
 
 st.markdown("""
 <div class="hero">
@@ -41,33 +13,34 @@ st.markdown("""
 steps = [
     (
         "01",
-        "🏠 Enter Property Details",
-        "Provide the property's rent, location, bedrooms, bathrooms, "
-        "property type, furnishing, parking, pets policy, and other available information."
+        "🎯 Set Your Requirements",
+        "Choose your city, maximum monthly budget, minimum bedrooms and "
+        "bathrooms, and the property type you want."
     ),
     (
         "02",
-        "🎯 Set Your Requirements",
-        "Tell RentWise your maximum budget, preferred location, "
-        "minimum bedrooms and bathrooms, property type, furnishing, parking, and pet requirements."
+        "🏘️ Browse Matching Properties",
+        "RentWise searches its rental dataset of Islamabad and Rawalpindi "
+        "listings and shows the properties that fit your requirements."
     ),
     (
         "03",
-        "🤖 AI Investigation",
-        "RentWise analyzes the property against your requirements using "
-        "AI-powered price, location, requirement, and risk analysis."
+        "🤖 Investigate a Property",
+        "Pick a property and RentWise analyzes it against your requirements "
+        "using AI-powered price, location, requirement, and risk analysis."
     ),
     (
         "04",
         "📊 Review the Results",
-        "The system produces clear results showing price status, "
-        "location match, requirement match, and an overall risk level."
+        "You get a RentWise score, price status, location match, requirement "
+        "match, a risk level, and a verdict."
     ),
     (
         "05",
-        "🛡️ Investigate Before You Commit",
-        "RentWise also identifies missing information and generates "
-        "useful questions you can ask the landlord before signing anything."
+        "🛡️ Ask Before You Commit",
+        "RentWise highlights missing information and generates questions "
+        "to ask the landlord before signing anything. You can also compare "
+        "several investigated properties side by side."
     ),
 ]
 

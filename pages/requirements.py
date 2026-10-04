@@ -1,39 +1,7 @@
-
 import streamlit as st
+from theme import apply_theme
 
-st.markdown("""
-<style>
-.hero {
-    background: linear-gradient(135deg, #111827, #1f2937);
-    padding: 3rem;
-    border-radius: 24px;
-    color: white;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-}
-
-.card {
-    background: white;
-    padding: 1.8rem;
-    border-radius: 18px;
-    border: 1px solid #e5e7eb;
-    margin-bottom: 1rem;
-}
-
-.card h2 {
-    color: #111827;
-}
-
-.card p {
-    color: #4b5563;
-    line-height: 1.7;
-}
-</style>
-""", unsafe_allow_html=True)
+apply_theme()
 
 st.markdown("""
 <div class="hero">
@@ -71,7 +39,7 @@ with col2:
     <div class="card">
         <h2>📍 Location</h2>
         <p>
-            Specify your preferred city or area so the property can
+            Specify your preferred city so the property can
             be checked against your location requirement.
         </p>
     </div>
@@ -85,7 +53,7 @@ with col3:
         <h2>🛏️ Space & Property Type</h2>
         <p>
             Define minimum bedrooms, bathrooms, and the type of property
-            you are looking for, such as an apartment or house.
+            you are looking for, such as a flat or house.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -95,8 +63,9 @@ with col4:
     <div class="card">
         <h2>🛋️ Lifestyle Requirements</h2>
         <p>
-            Specify preferences such as furnished accommodation,
-            parking availability, and whether pets are required or allowed.
+            Specify whether furnished accommodation or parking is required.
+            If a listing does not state these details, RentWise flags them
+            as something to verify.
         </p>
     </div>
     """, unsafe_allow_html=True)

@@ -1,30 +1,13 @@
 import streamlit as st
 import pandas as pd
+from theme import apply_theme
 from rentwise_backend import run_investigation, compare_properties
 from property_search import search_properties
 
 st.set_page_config(page_title="RentWise AI", page_icon="🏠",
                    layout="wide", initial_sidebar_state="collapsed")
 
-st.markdown("""
-<style>
-.stApp { background:#f7f8fc; }
-.block-container { padding-top:2rem; padding-bottom:3rem; max-width:1400px; }
-.hero { background:linear-gradient(135deg,#111827,#1f2937); padding:2.5rem;
-        border-radius:24px; margin-bottom:2rem; color:white; }
-.hero-title { font-size:3rem; font-weight:800; margin-bottom:.4rem; }
-.hero-subtitle { font-size:1.1rem; color:#d1d5db; }
-.section-title { font-size:1.6rem; font-weight:750; margin:1rem 0; color:#111827; }
-.metric-card { background:white; padding:1.3rem; border-radius:18px;
-               border:1px solid #e5e7eb; text-align:center; }
-.metric-icon { font-size:1.7rem; }
-.metric-label { color:#6b7280; font-size:.9rem; margin-top:.3rem; }
-.metric-value { font-size:1.25rem; font-weight:750; margin-top:.3rem; color:#111827; }
-.question-box { background:white; border:1px solid #e5e7eb; border-radius:14px;
-                padding:1rem 1.2rem; margin-bottom:.7rem; }
-.stButton > button { width:100%; border-radius:12px; height:3rem; font-weight:700; }
-</style>
-""", unsafe_allow_html=True)
+apply_theme()
 
 st.markdown("""
 <div class="hero">

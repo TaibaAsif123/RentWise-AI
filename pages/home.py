@@ -1,36 +1,7 @@
-
 import streamlit as st
+from theme import apply_theme
 
-st.markdown("""
-<style>
-.hero {
-    background: linear-gradient(135deg, #111827, #1f2937);
-    padding: 4rem 3rem;
-    border-radius: 24px;
-    color: white;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    color: #d1d5db;
-}
-
-.card {
-    background: white;
-    padding: 1.8rem;
-    border-radius: 18px;
-    border: 1px solid #e5e7eb;
-    margin-bottom: 1rem;
-}
-</style>
-""", unsafe_allow_html=True)
+apply_theme()
 
 st.markdown("""
 <div class="hero">

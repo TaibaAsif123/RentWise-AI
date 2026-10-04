@@ -1,39 +1,7 @@
-
 import streamlit as st
+from theme import apply_theme
 
-st.markdown("""
-<style>
-.hero {
-    background: linear-gradient(135deg, #111827, #1f2937);
-    padding: 3rem;
-    border-radius: 24px;
-    color: white;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-}
-
-.card {
-    background: white;
-    padding: 1.8rem;
-    border-radius: 18px;
-    border: 1px solid #e5e7eb;
-    margin-bottom: 1rem;
-}
-
-.card h2 {
-    color: #111827;
-}
-
-.card p {
-    color: #4b5563;
-    line-height: 1.7;
-}
-</style>
-""", unsafe_allow_html=True)
+apply_theme()
 
 st.markdown("""
 <div class="hero">
@@ -86,7 +54,7 @@ with col3:
         <p>
             Compares the property characteristics with the tenant's
             requirements, including property type, furnishing,
-            bedrooms, bathrooms, parking, and pet preferences.
+            bedrooms, bathrooms, and parking.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -106,8 +74,9 @@ st.write("")
 
 st.info(
     "RentWise provides an investigation aid based on the information "
-    "entered by the user. It does not replace legal, financial, or "
-    "professional verification."
+    "available about a listing. It does not replace legal, financial, or "
+    "professional verification, and it does not claim that any property "
+    "or landlord is fraudulent."
 )
 
 if st.button("🔎 Investigate a Property", use_container_width=True):

@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets (never commit API keys)
+.env
+.streamlit/secrets.toml
+
+# Virtual environments
+venv/
+.venv/
+
+# Logs and junk
+streamlit.log
+*.log
+cloudflared-linux-amd64.deb
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
